@@ -5,7 +5,7 @@ A full-stack web application designed to help users track their daily activities
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://dayledger.vercel.app/)
 [![API Status](https://img.shields.io/badge/API-Online-blue?style=for-the-badge&logo=render)](https://dayledger.onrender.com)
 
-![Productivity Tracker Overview](./frontend/src/assets/image.png)
+![Productivity Tracker Overview](./frontend/src/assets/Screenshot%202026-02-13%20175134.png)
 
 ## 🚀 Features
 
