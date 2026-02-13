@@ -132,7 +132,6 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {/* Mobile Menu */}
 {open && (
   <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-6 py-4 space-y-3 text-base font-medium">
 
@@ -173,14 +172,16 @@ function Navbar() {
     <div className="border-t border-gray-200 dark:border-gray-700 pt-3 mt-3">
 
       <button
-        onClick={() => {
-          setOpen(false)
-          // Add your logout logic here
-        }}
-        className="block w-full text-left px-4 py-2 rounded-md text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition"
-      >
-        Logout
-      </button>
+  onClick={async () => {
+    await supabase.auth.signOut()
+    setOpen(false)
+    navigate("/login")
+  }}
+  className="block w-full text-left px-4 py-2 rounded-md text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition"
+>
+  Logout
+</button>
+
 
     </div>
 
