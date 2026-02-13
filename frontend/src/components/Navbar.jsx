@@ -132,30 +132,60 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-6 py-4 space-y-4 text-sm font-medium">
-          <NavLink to="/" onClick={() => setOpen(false)}>
-            Tracker
-          </NavLink>
+      {/* Mobile Menu */}
+{open && (
+  <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-6 py-4 space-y-3 text-base font-medium">
 
-          <NavLink
-            to={`/dashboard?date=${today}`}
-            onClick={() => setOpen(false)}
-          >
-            Analytics
-          </NavLink>
+    <NavLink
+      to="/"
+      onClick={() => setOpen(false)}
+      className={({ isActive }) =>
+        `
+        block w-full px-4 py-2 rounded-md transition
+        ${
+          isActive
+            ? "bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-400"
+            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+        }
+        `
+      }
+    >
+      Tracker
+    </NavLink>
 
-          <button
-            onClick={() => {
-              handleLogout()
-              setOpen(false)
-            }}
-            className="text-left text-red-500"
-          >
-            Logout
-          </button>
-        </div>
-      )}
+    <NavLink
+      to={`/dashboard?date=${today}`}
+      onClick={() => setOpen(false)}
+      className={({ isActive }) =>
+        `
+        block w-full px-4 py-2 rounded-md transition
+        ${
+          isActive
+            ? "bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-400"
+            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+        }
+        `
+      }
+    >
+      Analytics
+    </NavLink>
+
+    <div className="border-t border-gray-200 dark:border-gray-700 pt-3 mt-3">
+
+      <button
+        onClick={() => {
+          setOpen(false)
+          // Add your logout logic here
+        }}
+        className="block w-full text-left px-4 py-2 rounded-md text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition"
+      >
+        Logout
+      </button>
+
+    </div>
+
+  </div>
+)}
     </nav>
   )
 }
