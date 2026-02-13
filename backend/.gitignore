@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment variables (CRITICAL)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# IDE
+.vscode/
+.idea/
