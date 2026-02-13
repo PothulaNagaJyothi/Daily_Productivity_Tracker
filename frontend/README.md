@@ -2,6 +2,8 @@
 
 A modern, responsive web application for tracking daily activities and visualizing productivity. Built with **React**, **Vite**, and **Tailwind CSS**.
 
+**Live Demo:** [https://dayledger.vercel.app/](https://dayledger.vercel.app/)
+
 ## Overview
 
 The **Daily Productivity Tracker Frontend** provides a user-friendly interface to interact with the productivity API. It features secure authentication, a dynamic dashboard for managing daily logs, and real-time analytics visualization.
@@ -12,7 +14,7 @@ Key Features:
 - **Dashboard**: View daily summaries and progress towards the 1440-minute limit.
 - **Analytics**: Visualize time distribution across categories (Work, Study, Exercise, etc.).
 - **Dark Mode**: Fully supported dark theme that respects system preference or user toggle.
-- **Responsive Design**: Mobile-friendly interface with a responsive navigation bar.
+- **Responsive Navigation**: Enhanced mobile menu and profile management.
 
 ---
 
@@ -92,6 +94,19 @@ frontend/
 
 ---
 
+## Deployment
+
+This application is deployed on **Vercel**.
+
+### To Deploy Your Own:
+
+1. **Build command**: `npm run build`
+2. **Output directory**: `dist`
+3. **Connect to Git**: Push your code and connect your repository to Vercel.
+4. **Environment Variables**: Add `VITE_API_URL`, `VITE_SUPABASE_URL`, and `VITE_SUPABASE_ANON_KEY` to your Vercel project settings.
+
+---
+
 ## Usage Guide
 
 1. **Sign Up / Login**: Create an account. Authentication is handled via Supabase.
@@ -109,7 +124,7 @@ frontend/
 ## Scripts
 
 - `npm run dev`: Starts the development server.
-- `npm run build`: Builds the app for production.
+- `npm run build`: Builds the app for production (outputs to `dist/`).
 - `npm run preview`: Previews the production build locally.
 - `npm run lint`: Runs ESLint to check for code quality issues.
 

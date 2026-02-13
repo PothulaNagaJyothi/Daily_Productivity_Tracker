@@ -2,7 +2,10 @@
 
 A full-stack web application designed to help users track their daily activities, enforce a 24-hour time constraint (1440 minutes), and visualize productivity analytics.
 
-![Productivity Tracker Overview](./frontend/src/assets/Screenshot%202026-02-13%20175134.png)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://dayledger.vercel.app/)
+[![API Status](https://img.shields.io/badge/API-Online-blue?style=for-the-badge&logo=render)](https://dayledger.onrender.com)
+
+![Productivity Tracker Overview](./frontend/src/assets/image.png)
 
 ## 🚀 Features
 
@@ -11,17 +14,17 @@ A full-stack web application designed to help users track their daily activities
 - **Analytics Dashboard**: Visualize time distribution and productivity scores.
 - **Secure Authentication**: User management powered by Supabase Auth.
 - **Dark Mode Support**: Fully responsive dark theme for better user experience.
-- **Responsive Design**: Modern UI built with React and Tailwind CSS.
+- **Enhanced Mobile Support**: Responsive navigation and layout for all devices.
 
 ## 🛠️ Tech Stack
 
 ### Backend ([Read More](./backend/README.md))
-- **Node.js & Express**: RESTful API server.
+- **Node.js & Express**: RESTful API server (**Hosted on Render**).
 - **Supabase**: PostgreSQL database and Authentication.
 - **Security**: Helmet, Rate Limiting, CORS.
 
 ### Frontend ([Read More](./frontend/README.md))
-- **React (Vite)**: Fast, modern frontend framework.
+- **React (Vite)**: Fast, modern frontend framework (**Hosted on Vercel**).
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Supabase Client**: For direct authentication and realtime features.
 - **Chart.js**: For analytics visualization.

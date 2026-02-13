@@ -2,6 +2,8 @@
 
 A robust RESTful API for tracking daily activities, enforcing productivity constraints (1440 minutes/day), and generating analytics insights. Built with **Node.js**, **Express**, and **Supabase**.
 
+**Base URL:** [https://dayledger.onrender.com](https://dayledger.onrender.com)
+
 ## Overview
 
 The **Daily Productivity Tracker Backend** manages user activities and productivity analytics. It enforces a fundamental constraint: users have exactly **1440 minutes (24 hours) per day**. The system tracks activities by category, calculates daily statistics, and generates productivity scores.
@@ -92,6 +94,21 @@ backend/
    ```bash
    node server.js
    ```
+
+---
+
+## Deployment
+
+This application is deployed on **Render**.
+
+### Production Setup
+
+1. **Build Command**: `npm install`
+2. **Start Command**: `node server.js`
+   > **Note**: The `package.json` does not have a default `start` script, so you must explicitly specify `node server.js`.
+
+3. **Environment Variables**:
+   Ensure all variables from `.env` (`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `FRONTEND_URL`) are set in your Render dashboard.
 
 ---
 
