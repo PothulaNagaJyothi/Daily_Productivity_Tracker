@@ -2,7 +2,7 @@
 
 A full-stack web application designed to help users track their daily activities, enforce a 24-hour time constraint (1440 minutes), and visualize productivity analytics.
 
-![Productivity Tracker Overview](./frontend/src/assets/image.png)
+![Productivity Tracker Overview](./frontend/src/assets/Screenshot%202026-02-13%20175134.png)
 
 ## 🚀 Features
 
